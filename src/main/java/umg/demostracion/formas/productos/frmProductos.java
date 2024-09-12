@@ -42,7 +42,7 @@ public class frmProductos {
                 producto.setOrigen(comboBoxOrigen.getSelectedItem().toString());
 
                 try {
-                    new ProductoServicio().crearProducto(producto);
+                    new ProductoServicio().agregarProducto(producto);
                     JOptionPane.showMessageDialog(null,"Producto creado correctamente");
                 } catch (Exception ex) {
                     JOptionPane.showMessageDialog(null, "Error al crear el producto");
